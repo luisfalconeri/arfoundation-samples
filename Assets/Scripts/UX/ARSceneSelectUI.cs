@@ -158,6 +158,11 @@ namespace UnityEngine.XR.ARFoundation.Samples
             LoadScene("ImageTrackingWithMultiplePrefabs");
         }
 
+        public void AnchorsManButtonPressed()
+        {
+            LoadScene("Anchors_with_character");
+        }
+
         public void AnchorsButtonPressed()
         {
             LoadScene("Anchors");

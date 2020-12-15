@@ -38,6 +38,14 @@ namespace UnityEngine.XR.ARFoundation.Samples
         }
 
         [SerializeField]
+        Button m_AnchorsMan;
+        public Button anchorsMan
+        {
+            get => m_AnchorsMan;
+            set => m_AnchorsMan = value;
+        }
+
+        [SerializeField]
         Button m_ARWorldMap;
         public Button ARWorldMap
         {
@@ -427,6 +435,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
             if(anchorDescriptors.Count > 0)
             {
                 m_Anchors.interactable = true;
+                m_AnchorsMan.interactable = true;
             }
 
             if(objectDescriptors.Count > 0)
